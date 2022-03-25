@@ -1,8 +1,14 @@
+.row h2 {
+    font-size: 1.5em;
+    margin: 20px 0 0 20px;
+    padding: 0;
+}
+
 .movies_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 -15px;
+    margin: 0;
 }
 
 .movie_poster {
@@ -15,4 +21,50 @@
 .movie_poster:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+.movies_posters::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.movies_posters::-webkit-scrollbar-track {
+    background: #050505; 
+    border-radius: 10px;
+}
+
+.movies_posters::-webkit-scrollbar-thumb {
+    background: #6b0000;
+    border-radius: 10px;
+}
+
+.movies_posters::-webkit-scrollbar-thumb:hover {
+    background: #E50914; 
+}
+
+.container {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050505; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6b0000;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #E50914; 
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
 }

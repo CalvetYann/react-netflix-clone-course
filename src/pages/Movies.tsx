@@ -1,9 +1,10 @@
 import { Button, ImageList, ImageListItem } from '@mui/material'
 import React, { useEffect } from 'react'
-import requests from '../Model/requests';
+import { requests } from '../Model/requests';
 import Row from '../components/Row/Row';
+import Banner from '../components/Banner/Banner';
 
-const Homepage = () => {
+const Movies = () => {
 
     useEffect(() => {
 
@@ -11,6 +12,9 @@ const Homepage = () => {
 
     return (
         <div className='container'>
+            <div className='banner'>
+                <Banner fetchUrl={requests.fetchTrending} />
+            </div>
             <Row rowTitle='Comedies' fetchUrl={requests.fetchComedyMovies} />
             <Row rowTitle='Tendances actuelles' fetchUrl={requests.fetchTrending} />
             <Row rowTitle='Netflix Originals' fetchUrl={requests.fetchNetflixOriginals} />
@@ -23,4 +27,4 @@ const Homepage = () => {
     )
 }
 
-export default Homepage
+export default Movies

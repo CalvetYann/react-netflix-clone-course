@@ -1,0 +1,16 @@
+.profile-image img {
+    width: 200px;
+    height: 200px;
+}
+
+.profile-image img:hover {
+    padding: 2px;
+    border: 2px solid #ccc;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+.title {
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    color: #555;
+}
